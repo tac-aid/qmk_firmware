@@ -1,6 +1,6 @@
 {
     "manufacturer": "Salicylic-acid3",
-    "keyboard_name": "insixty_us", 
+    "keyboard_name": "insixty_en", 
     "maintainer": "Salicylic-acid3",
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
@@ -21,6 +21,9 @@
     },
     "processor": "RP2040",
     "split": {
+        "bootmagic": {
+            "matrix": [5, 0]
+        },
         "enabled": true,
         "handedness": {
             "pin": "GP11"
@@ -31,7 +34,10 @@
                 "rows": ["GP2", "GP3", "GP4", "GP6", "GP5"]
             }
         },
-        "soft_serial_pin": "GP29"
+        "serial": {
+            "driver": "vendor",
+            "pin": "GP20"
+        }
     },
     "url": "https://salicylic-acid3.hatenablog.com/",
     "usb": {
