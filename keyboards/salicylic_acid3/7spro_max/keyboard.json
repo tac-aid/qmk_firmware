@@ -4,13 +4,14 @@
     "url": "https://salicylic-acid3.hatenablog.com/",
     "maintainer": "Salicylic_acid3",
     "usb": {
-        "vid": "0x04D8",
-        "pid": "0xEB5F",
-        "device_version": "0.0.7"
+        "vid": "0x355D",
+        "pid": "0x1002",
+        "device_version": "0.0.1"
     },
     "features": {
-        "bootmagic": false,
-        "command": true,
+        "bootmagic": true,
+        "command": false,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
         "nkro": false,
