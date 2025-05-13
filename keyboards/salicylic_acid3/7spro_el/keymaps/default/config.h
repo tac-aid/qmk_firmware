@@ -1,4 +1,4 @@
-/* Copyright 2025 Salicylic_acid3
+/* Copyright 2018 Salicylic_acid3
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,4 +16,7 @@
 
 #pragma once
 
-#define SPLIT_HAND_PIN B7
+/* Select hand configuration */
+
+#define QUICK_TAP_TERM 0
+#define TAPPING_TERM 180
