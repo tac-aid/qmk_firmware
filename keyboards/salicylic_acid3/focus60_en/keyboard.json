@@ -5,7 +5,7 @@
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "dynamic_keymap": {
-        "layer_count": 13
+        "layer_count": 7
     },
     "features": {
         "bootmagic": true,

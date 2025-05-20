@@ -36,6 +36,9 @@
         "pid": "0xE5A9",
         "device_version": "1.0.0"
     },
+    "build": {
+        "lto": true
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
