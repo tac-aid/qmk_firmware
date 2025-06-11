@@ -1,6 +1,6 @@
-# O51Go
+# GoFortyOrtho
 
-![O51Go](https://s2.booth.pm/1d33594d-0c5f-4f93-baf5-2e89e0d99afc/i/5528166/b6492818-45d6-44d5-a60c-c3066d6362d8_base_resized.jpg)
+![GoFortyOrtho](https://s2.booth.pm/1d33594d-0c5f-4f93-baf5-2e89e0d99afc/i/5528166/b6492818-45d6-44d5-a60c-c3066d6362d8_base_resized.jpg)
 
 40% Ortholinear Keyboard
 
@@ -10,11 +10,11 @@
 
 Make example for this keyboard (after setting up your build environment):
 
-    make salicylic_acid3/o51go:default
+    make salicylic_acid3/goforty_ortho:default
 
 Flashing example for this keyboard:
 
-    make salicylic_acid3/o51go:flash
+    make salicylic_acid3/goforty_ortho:flash
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
