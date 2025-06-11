@@ -5,7 +5,7 @@
     "maintainer": "Salicylic_acid3",
     "usb": {
         "vid": "0x355D",
-        "pid": "0x101d",
+        "pid": "0x101D",
         "device_version": "0.0.1"
     },
     "features": {

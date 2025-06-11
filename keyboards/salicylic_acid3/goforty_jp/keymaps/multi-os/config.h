@@ -1,4 +1,4 @@
-/* Copyright 2018 Salicylic_acid3
+/* Copyright 2021 Salicylic_acid3
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,6 +17,4 @@
 #pragma once
 
 /* Select hand configuration */
-
-#define QUICK_TAP_TERM 0
-#define TAPPING_TERM 180
+#define DYNAMIC_KEYMAP_LAYER_COUNT 12
