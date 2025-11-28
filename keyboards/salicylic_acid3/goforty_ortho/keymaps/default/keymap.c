@@ -27,9 +27,9 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_TAB,         KC_Q,  KC_L,    KC_U,    KC_SCLN, LSFT(KC_SCLN), KC_NO, KC_F, KC_W, KC_R, KC_Y, KC_P, KC_BSPC,
-        KC_LCTL,        KC_E,  KC_I,    KC_A,    KC_O,    KC_COMM,       KC_NO, KC_K, KC_T, KC_N, KC_S, KC_H, KC_BSPC,
+        KC_LCTL,        KC_E,  KC_I,    KC_A,    KC_O,    KC_COMM,       KC_NO, KC_K, KC_T, KC_N, KC_S, KC_H, LGUI(KC_SPC),
         LSFT_T(KC_ESC), KC_Z,  KC_X,    KC_C,    KC_V,    KC_DOT,        KC_NO, KC_G, KC_D, KC_M, KC_J, KC_B, KC_NO,
-        KC_NO,          KC_NO, KC_LALT, KC_LGUI, USER_2,LT(3, KC_SPC),LSFT_T(KC_ENT),USER_3, KC_NO, KC_NO, KC_NO, KC_NO
+        KC_NO,          KC_NO, KC_LALT, KC_LGUI, USER_2,LT(3, KC_SPC),LSFT_T(KC_ENT),USER_3, KC_NO, KC_NO, LGUI(LSHFT(LALT(LCTL(KC_S)))), KC_NO
     ),
     [1] = LAYOUT(
         KC_NO, KC_F1, KC_F2, KC_F3, KC_F4, KC_NO, KC_NO, LSFT(KC_SCLN), KC_1, KC_2, KC_3, KC_NO, KC_NO, 
@@ -45,8 +45,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [3] = LAYOUT(
         KC_NO, KC_NO, KC_NO, LSFT(KC_TAB), USER_1, KC_NO, KC_NO, KC_NO, LALT(KC_LEFT), KC_UP, LALT(KC_RIGHT), KC_NO, KC_NO, 
-        KC_NO, KC_NO, LALT(KC_S), LSFT(KC_TAB), USER_0, KC_NO, KC_NO, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, LCTRL(KC_LEFT), LCTRL(KC_LEFT),
-        KC_NO, KC_NO, LALT(KC_X), LALT(KC_C), KC_NO, KC_NO, KC_NO, KC_PGDN, LGUI(KC_LEFT), KC_NO, LGUI(KC_RIGHT), LCTRL(KC_LEFT), KC_F11,
+        KC_NO, KC_NO, LALT(KC_S), LSFT(KC_TAB), USER_0, KC_NO, KC_NO, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, LCTL(KC_LEFT), LCTL(KC_LEFT),
+        KC_NO, KC_NO, LALT(KC_X), LALT(KC_C), KC_NO, KC_NO, KC_NO, KC_PGDN, LGUI(KC_LEFT), KC_NO, LGUI(KC_RIGHT), LCTL(KC_LEFT), KC_F11,
         KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_LSFT,    KC_NO, KC_NO, KC_NO, KC_NO
     ),
     [4] = LAYOUT(
