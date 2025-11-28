@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,  KC_L,    KC_U,    KC_SCLN, LSFT(KC_SCLN), KC_NO, KC_F, KC_W, KC_R, KC_Y, KC_P, KC_BSPC,
         KC_LCTL,        KC_E,  KC_I,    KC_A,    KC_O,    KC_COMM,       KC_NO, KC_K, KC_T, KC_N, KC_S, KC_H, KC_BSPC,
         LSFT_T(KC_ESC), KC_Z,  KC_X,    KC_C,    KC_V,    KC_DOT,        KC_NO, KC_G, KC_D, KC_M, KC_J, KC_B, KC_NO,
-        KC_NO,          KC_NO, KC_LALT, KC_LGUI, USER2,LT(3, KC_SPC),LSFT_T(KC_ENT),USER3, KC_NO, KC_NO, KC_NO, KC_NO
+        KC_NO,          KC_NO, KC_LALT, KC_LGUI, USER_2,LT(3, KC_SPC),LSFT_T(KC_ENT),USER_3, KC_NO, KC_NO, KC_NO, KC_NO
     ),
     [1] = LAYOUT(
         KC_NO, KC_F1, KC_F2, KC_F3, KC_F4, KC_NO, KC_NO, LSFT(KC_SCLN), KC_1, KC_2, KC_3, KC_NO, KC_NO, 
@@ -44,10 +44,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______,   _______,   _______, _______,   _______,    _______, _______, _______, _______
     ),
     [3] = LAYOUT(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, 
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______,   _______,   _______, _______,   _______,    _______, _______, _______, _______
+        _______, _______, _______, LSFT(KC_TAB), USER_1, _______, _______, _______, _______, _______, _______, _______, _______, 
+        _______, _______, LALT(KC_S), LSFT(KC_TAB), USER_0, _______, _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, LALT(KC_X), LALT(KC_C), _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______,   _______,   _______, _______,   KC_LSFT,    _______, _______, _______, _______
     ),
     [4] = LAYOUT(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T, KC_NO,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_NO,
@@ -67,13 +67,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______,   _______,   _______, _______,   _______,    _______, _______, _______, _______
     )
-};
-
-enum custom_keycodes {
-    USER_0 = SAFE_RANGE, 
-    USER_1,
-    USER_2,
-    USER_3,
 };
 
 static bool alt_tab_active = false;
