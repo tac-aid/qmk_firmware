@@ -19,15 +19,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        KC_TAB,  KC_Q,    KC_L,    KC_U,    KC_SCLN, KC_T,    KC_LCBR,    KC_F,    KC_W,    KC_R,    KC_Y,    KC_P,  KC_BSPC,
-        KC_LCTL, KC_E,    KC_I,    KC_A,    KC_O,    KC_COMM, KC_SCLN,    KC_K,    KC_T,    KC_N,    KC_S,    KC_H,  KC_BSPC,
-        LSFT_T(KC_ESC), KC_Z,    KC_X,    KC_C,    KC_V,    KC_DOT,  KC_MINS,    KC_G,    KC_D,    KC_M,    KC_J,    KC_B,  _______,
-        _______, _______, KC_LALT, KC_LGUI,   _______, LT(3, KC_SPC),LSFT_T(KC_ENT),_______, _______, _______, _______, _______
+        KC_TAB,  KC_Q,    KC_L,    KC_U,    KC_SCLN, LSFT(KC_SCLN),    KC_NO,    KC_F,    KC_W,    KC_R,    KC_Y,    KC_P,  KC_NO,
+        KC_LCTL, KC_E,    KC_I,    KC_A,    KC_O,    KC_COMM, KC_NO,    KC_K,    KC_T,    KC_N,    KC_S,    KC_H,  KC_BSPC,
+        LSFT_T(KC_ESC), KC_Z,    KC_X,    KC_C,    KC_V,    KC_DOT,  KC_NO,    KC_G,    KC_D,    KC_M,    KC_J,    KC_B,  _______,
+        KC_NO,   KC_NO, KC_LALT, KC_LGUI,   USER2, LT(3, KC_SPC),LSFT_T(KC_ENT),USER3, KC_NO, KC_NO, KC_NO, KC_NO
     ),
     [1] = LAYOUT(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, 
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        _______, KC_F1, KC_F2, KC_F3, KC_F4, _______, _______, LSFT(KC_SCLN), KC_1, KC_2, KC_3, _______, _______, 
+        _______, KC_F5, KC_F6, KC_F7, KC_F8, _______, _______, KC_DOT, KC_4, KC_5, KC_6, _______, _______,
+        _______, KC_F9, KC_F10, KC_F11, KC_F12, LALT(KC_F7), _______, KC_SLASH, KC_7, KC_8, KC_9, KC_0, _______,
         _______, _______, _______, _______,   _______,   _______, _______,   _______,    _______, _______, _______, _______
     ),
     [2] = LAYOUT(
@@ -49,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL, KC_LGUI, KC_LALT,KC_LNG1,    KC_SPC,    KC_SPC,     KC_SPC,    KC_SPC, KC_LNG2, KC_LEFT, KC_DOWN, KC_RGHT
     ),
     [5] = LAYOUT(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, 
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        _______, KC_F1, KC_F2, KC_F3, KC_F4, _______, _______, LSFT(KC_SCLN), KC_1, KC_2, KC_3, _______, _______, 
+        _______, KC_F5, KC_F6, KC_F7, KC_F8, _______, _______, KC_DOT, KC_4, KC_5, KC_6, _______, _______,
+        _______, KC_F9, KC_F10, KC_F11, KC_F12, LALT(KC_F7), _______, KC_SLASH, KC_7, KC_8, KC_9, KC_0, _______,
         _______, _______, _______, _______,   _______,   _______, _______,   _______,    _______, _______, _______, _______
     ),
     [6] = LAYOUT(
