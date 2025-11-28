@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Firmware
         # ここを変更: keymapを自分の作成したもの（例: via, mymap）に合わせる
-        run: qmk compile -kb salicylic_acid3/goforty_ortho -km default
+        run: make salicylic_acid3/goforty_ortho:default
 
       - name: Archive Artifacts
         uses: actions/upload-artifact@v4
