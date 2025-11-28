@@ -1,0 +1,34 @@
+name: Build GoForty Ortho
+
+on:
+  push:
+    paths:
+      - "keyboards/salicylic_acid3/goforty_ortho/**"
+      - ".github/workflows/**"
+  workflow_dispatch: # 手動実行ボタンを有効化
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: qmkfm/qmk_cli:latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install dependencies
+        run: pip3 install -r requirements.txt
+
+      - name: Build Firmware
+        # ここを変更: keymapを自分の作成したもの（例: via, mymap）に合わせる
+        run: qmk compile -kb salicylic_acid3/goforty_ortho -km default
+
+      - name: Archive Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: goforty_ortho_firmware
+          path: |
+            *.hex
+            *.uf2
