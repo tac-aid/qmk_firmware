@@ -18,3 +18,6 @@
 
 /* Select hand configuration */
 #define DYNAMIC_KEYMAP_LAYER_COUNT 7
+#define TAP_CODE_DELAY 5
+#define TAPPING_TERM 180
+#define PERMISSIVE_HOLD
