@@ -27,8 +27,8 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_TAB,         KC_Q,  KC_L,    KC_U,    KC_SCLN, KC_COLN, KC_NO, KC_F, KC_W, KC_R, KC_Y, KC_P, KC_BSPC,
-        LM(4, MOD_LCTL),        KC_E,  KC_I,    KC_A,    KC_O,    KC_COMM,       KC_NO, KC_K, KC_T, KC_N, KC_S, KC_H, LGUI(KC_SPC),
-        LSFT_T(KC_ESC), KC_Z,  KC_X,    KC_C,    KC_V,    KC_DOT,        KC_NO, KC_G, KC_D, KC_M, KC_J, KC_B, KC_NO,
+        LM(4, MOD_LCTL),        KC_E,  KC_I,    KC_A,    KC_O,    KC_COMM,       KC_NO, KC_K, KC_T, KC_N, KC_S, KC_H, KC_ESC,
+        KC_LSFT, KC_Z,  KC_X,    KC_C,    KC_V,    KC_DOT,        KC_NO, KC_G, KC_D, KC_M, KC_J, KC_B, LGUI(KC_SPC),
         KC_NO,          KC_NO, LM(4, MOD_LALT), LM(4, MOD_LGUI), USER_2,LT(3, KC_SPC),LSFT_T(KC_ENT),USER_3, KC_NO, KC_NO, HYPR(KC_S), KC_NO
     ),
     [1] = LAYOUT(
@@ -47,12 +47,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_NO, KC_NO, LSFT(KC_TAB), USER_1, KC_NO, KC_NO, KC_NO, LALT(KC_LEFT), KC_UP, LALT(KC_RIGHT), KC_NO, KC_NO, 
         KC_NO, KC_NO, LALT(KC_S), LSFT(KC_TAB), USER_0, KC_NO, KC_NO, KC_PGUP, KC_LEFT, KC_DOWN, KC_RIGHT, LCTL(KC_LEFT), LCTL(KC_RIGHT),
         KC_NO, KC_NO, LALT(KC_X), LALT(KC_C), KC_NO, KC_NO, KC_NO, KC_PGDN, LGUI(KC_LEFT), KC_NO, LGUI(KC_RIGHT), LCTL(KC_UP), KC_F11,
-        KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_NO,   KC_LSFT,    KC_NO, KC_NO, KC_NO, KC_NO
+        KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO,   KC_NO, KC_LSFT,   KC_NO,    KC_NO, KC_NO, KC_NO, KC_NO
     ),
     [4] = LAYOUT(
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T, KC_NO,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,  KC_BSPC,
         KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G, KC_NO,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN,  KC_NO,
-        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_NO,    KC_N,    KC_M, KC_COMM,  KC_DOT,   KC_NO,   KC_NO,
+        KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_NO,    KC_N,    KC_M, KC_COMM,  KC_DOT,   KC_SLSH,   KC_NO,
         KC_NO, KC_NO, KC_LALT,KC_LGUI,    KC_LNG2,    KC_SPC,     KC_ENT,    KC_LNG1, KC_NO, KC_NO, KC_NO, KC_NO
     ),
     [5] = LAYOUT(
