@@ -24,6 +24,14 @@ enum custom_keycodes {
     USER_3,
 };
 
+const uint16_t PROGMEM btn4[] = {KC_D, KC_M, COMBO_END};
+const uint16_t PROGMEM btn5[] = {KC_M, KC_J, COMBO_END};
+
+combo_t key_combos[] = {
+  COMBO(btn4, KC_BTN4),
+  COMBO(btn5, KC_BTN5),
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
         KC_TAB,         KC_Q,  KC_L,    KC_U,    KC_SCLN, KC_COLN, KC_NO, KC_F, KC_W, KC_R, KC_Y, KC_P, KC_BSPC,
